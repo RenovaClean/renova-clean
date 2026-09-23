@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Renova Clean — limpeza profissional e conservação de condomínios. Solicite seu orçamento.">
+<title>Renova Clean | Limpeza Profissional de Condomínios</title>
+<style>
+:root{--blue:#0757a8;--dark:#063d78;--light:#eaf4ff;--text:#17324d;--muted:#66788a;--border:#dbe7f2}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--border)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-size:21px;font-weight:800;color:var(--blue)}
+nav{display:flex;gap:24px;align-items:center}nav a{font-size:14px;font-weight:700;color:#456074}
+.nav-cta{padding:11px 17px;border-radius:999px;background:var(--blue);color:#fff!important}
+.hero{background:linear-gradient(180deg,#f7fbff,#fff);padding:90px 0 80px}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:60px;align-items:center}
+.tag,.eyebrow{color:var(--blue);font-size:12px;font-weight:900;letter-spacing:1px}
+.tag{display:inline-block;padding:8px 13px;border-radius:999px;background:var(--light);margin-bottom:18px}
+h1{font-size:clamp(38px,5vw,62px);line-height:1.08;margin-bottom:20px}
+.hero p{font-size:18px;color:var(--muted)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;padding:14px 21px;border-radius:12px;font-weight:800;border:1px solid var(--blue);cursor:pointer}
+.primary{background:var(--blue);color:#fff}.secondary{background:#fff;color:var(--blue)}
+.hero-card{min-height:390px;border-radius:28px;background:linear-gradient(145deg,#0a5eaf,#4bb0e8);padding:30px;color:#fff;display:flex;align-items:flex-end;box-shadow:0 14px 40px rgba(12,61,110,.12)}
+.hero-card h2{font-size:30px;line-height:1.15;margin-bottom:12px}.hero-card p{color:#fff;font-size:15px}
+.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.mini{padding:13px;border:1px solid rgba(255,255,255,.25);border-radius:12px;background:rgba(255,255,255,.1);font-size:13px;font-weight:700}
+section{padding:82px 0}.section-head{max-width:700px;margin-bottom:36px}
+.section-title{font-size:clamp(30px,4vw,44px);line-height:1.15;margin:8px 0 12px}.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border:1px solid var(--border);border-radius:18px;padding:26px;box-shadow:0 8px 25px rgba(12,61,110,.04)}
+.icon{width:48px;height:48px;border-radius:14px;background:var(--light);display:grid;place-items:center;color:var(--blue);font-weight:900;margin-bottom:17px}
+.card h3{margin-bottom:7px}.card p{color:var(--muted);font-size:14px}
+.about{background:#f7fbff}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.check-list{display:grid;gap:14px;margin-top:24px}.check{display:flex;gap:11px}.check b{color:var(--blue)}.check p{color:var(--muted);font-size:14px}
+.about-box{background:#fff;border:1px solid var(--border);border-radius:24px;padding:34px;box-shadow:0 14px 40px rgba(12,61,110,.1)}
+.about-box h3{font-size:27px;margin-bottom:12px}.about-box p{color:var(--muted)}
+.quote{margin-top:24px;padding:18px;border-left:4px solid var(--blue);background:var(--light);font-weight:700;color:var(--dark)}
+.gallery{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:14px}
+.photo{min-height:190px;border-radius:18px;background:linear-gradient(135deg,#d9edff,#f7fbff);border:1px solid var(--border);display:flex;align-items:flex-end;padding:18px;color:var(--dark);font-weight:800}
+.large{grid-row:span 2;min-height:394px}
+.instagram{background:var(--blue);color:#fff;border-radius:25px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:30px}
+.instagram p{color:#dceeff;margin-top:7px}.insta-btn{background:#fff;color:var(--blue);padding:13px 18px;border-radius:12px;font-weight:800}
+.budget{background:#f7fbff}.form{background:#fff;border:1px solid var(--border);border-radius:24px;padding:30px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}label{font-size:13px;font-weight:800;display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid #cfdde9;border-radius:10px;font:inherit}textarea{min-height:125px;resize:vertical}.full{grid-column:1/-1}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.contact{padding:25px;border:1px solid var(--border);border-radius:18px}.contact small{display:block;color:var(--muted)}.contact strong{color:var(--blue)}
+footer{background:#073a6d;color:#fff;padding:35px 0}.footer-grid{display:flex;justify-content:space-between;gap:20px}.footer-grid p{color:#d7e8f7;font-size:13px}
+.float{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-weight:900;z-index:20}
+@media(max-width:850px){nav{display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr}.instagram{display:block}}
+@media(max-width:600px){.hero{padding:65px 0}.cards,.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.gallery{grid-template-columns:1fr}.large{grid-row:auto;min-height:220px}.footer-grid{display:block}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="brand" href="#">Renova Clean</a>
+<nav><a href="#servicos">Serviços</a><a href="#empresa">Sobre nós</a><a href="#instagram">Instagram</a><a class="nav-cta" href="#orcamento">Solicitar orçamento</a></nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="container hero-grid">
+<div>
+<span class="tag">LIMPEZA PROFISSIONAL PARA CONDOMÍNIOS</span>
+<h1>Um condomínio mais limpo, organizado e bem cuidado.</h1>
+<p>A Renova Clean oferece serviços de limpeza e conservação para condomínios, com atendimento profissional e rotinas planejadas de acordo com as necessidades de cada local.</p>
+<div class="actions"><a class="btn primary" href="#orcamento">Solicitar orçamento</a><a class="btn secondary" href="#servicos">Conhecer serviços</a></div>
+</div>
+<div class="hero-card"><div>
+<h2>Mais do que limpeza, a renovação do seu bem-estar.</h2>
+<p>Atendimento profissional para manter as áreas do seu condomínio limpas, organizadas e bem cuidadas.</p>
+<div class="mini-grid"><div class="mini">✓ Atendimento profissional</div><div class="mini">✓ Rotina organizada</div><div class="mini">✓ Equipe preparada</div><div class="mini">✓ Serviço personalizado</div></div>
+</div></div>
+</div></section>
+
+<section id="servicos"><div class="container">
+<div class="section-head"><div class="eyebrow">NOSSOS SERVIÇOS</div><h2 class="section-title">Cuidado profissional em cada espaço.</h2><p>Serviços pensados para a rotina e as necessidades de cada condomínio.</p></div>
+<div class="cards">
+<article class="card"><div class="icon">01</div><h3>Áreas comuns</h3><p>Limpeza e conservação de halls, escadas, corredores e demais áreas de circulação.</p></article>
+<article class="card"><div class="icon">02</div><h3>Garagens</h3><p>Limpeza e manutenção das áreas de garagem, ajudando a manter o ambiente organizado.</p></article>
+<article class="card"><div class="icon">03</div><h3>Áreas de lazer</h3><p>Cuidados com espaços de convivência, áreas gourmet e ambientes de lazer.</p></article>
+<article class="card"><div class="icon">04</div><h3>Lavagem de áreas</h3><p>Lavagem de pisos, acessos, calçadas e outros espaços conforme a rotina contratada.</p></article>
+<article class="card"><div class="icon">05</div><h3>Áreas externas</h3><p>Limpeza de calçadas, entradas e áreas externas para uma apresentação bem cuidada.</p></article>
+<article class="card"><div class="icon">06</div><h3>Conservação</h3><p>Rotinas planejadas para manter o condomínio limpo, organizado e agradável.</p></article>
+</div></div></section>
+
+<section class="about" id="empresa"><div class="container about-grid">
+<div><div class="eyebrow">SOBRE A RENOVA CLEAN</div><h2 class="section-title">Limpeza que valoriza o ambiente onde as pessoas vivem.</h2>
+<p>A Renova Clean trabalha com limpeza e conservação de condomínios, oferecendo atendimento profissional e rotinas organizadas para cada ambiente.</p>
+<div class="check-list">
+<div class="check"><b>✓</b><p><strong>Atendimento profissional</strong><br>Contato próximo e acompanhamento do serviço.</p></div>
+<div class="check"><b>✓</b><p><strong>Equipe preparada</strong><br>Profissionais orientados para uma rotina de limpeza eficiente.</p></div>
+<div class="check"><b>✓</b><p><strong>Atenção aos detalhes</strong><br>Cuidado com os espaços que fazem parte do dia a dia dos moradores.</p></div>
+<div class="check"><b>✓</b><p><strong>Serviço personalizado</strong><br>Rotinas adaptadas às necessidades de cada condomínio.</p></div>
+</div></div>
+<div class="about-box"><h3>Vamos renovar o seu condomínio?</h3><p>Entre em contato com a Renova Clean e solicite uma avaliação para conhecer uma rotina de limpeza adequada ao seu condomínio.</p><div class="quote">Solicite seu orçamento e conheça nossos serviços.</div><div class="actions"><a class="btn primary" href="#orcamento">Solicitar orçamento</a></div></div>
+</div></section>
+
+<section><div class="container"><div class="section-head"><div class="eyebrow">NOSSO TRABALHO</div><h2 class="section-title">Resultados que fazem diferença.</h2><p>Estes espaços poderão receber suas fotos reais depois.</p></div>
+<div class="gallery"><div class="photo large">Foto da equipe Renova Clean</div><div class="photo">Áreas comuns</div><div class="photo">Escadas e corredores</div><div class="photo">Áreas externas</div><div class="photo">Resultado da limpeza</div></div></div></section>
+
+<section id="instagram"><div class="container"><div class="instagram">
+<div><div class="eyebrow" style="color:#bde4ff">ACOMPANHE NOSSO TRABALHO</div><h2>Veja nossos serviços e resultados.</h2><p>@renovaclean_patos</p></div>
+<a class="insta-btn" href="https://www.instagram.com/renovaclean_patos/" target="_blank">Visitar Instagram</a>
+</div></div></section>
+
+<section class="budget" id="orcamento"><div class="container">
+<div class="section-head"><div class="eyebrow">ORÇAMENTO</div><h2 class="section-title">Vamos renovar o seu condomínio?</h2><p>Preencha os dados e o WhatsApp será aberto com sua solicitação pronta para envio.</p></div>
+<form class="form" id="quoteForm"><div class="form-grid">
+<div><label>Seu nome</label><input id="nome" required placeholder="Digite seu nome"></div>
+<div><label>Condomínio</label><input id="condominio" required placeholder="Nome do condomínio"></div>
+<div><label>WhatsApp</label><input id="whatsapp" required placeholder="(34) 9 9999-9999"></div>
+<div><label>Cidade</label><input id="cidade" placeholder="Ex.: Patos de Minas"></div>
+<div class="full"><label>Serviço de interesse</label><select id="servico"><option>Limpeza de condomínio</option><option>Limpeza de áreas comuns</option><option>Lavagem de garagem</option><option>Limpeza de área de lazer</option><option>Outro serviço</option></select></div>
+<div class="full"><label>Mensagem</label><textarea id="mensagem" placeholder="Conte brevemente o que você precisa."></textarea></div>
+<div class="full"><button class="btn primary" type="submit">Enviar solicitação pelo WhatsApp</button></div>
+</div></form></div></section>
+
+<section><div class="container"><div class="section-head"><div class="eyebrow">CONTATO</div><h2 class="section-title">Fale com a Renova Clean.</h2></div>
+<div class="contact-grid">
+<a class="contact" href="https://wa.me/5534999160010" target="_blank"><small>WhatsApp</small><strong>(34) 9 9916-0010</strong></a>
+<a class="contact" href="https://www.instagram.com/renovaclean_patos/" target="_blank"><small>Instagram</small><strong>@renovaclean_patos</strong></a>
+<a class="contact" href="mailto:ana@rnvservicos.com"><small>E-mail</small><strong>ana@rnvservicos.com</strong></a>
+</div></div></section>
+</main>
+
+<footer><div class="container footer-grid"><div><strong>Renova Clean</strong><p>Mais do que limpeza, a renovação do seu bem-estar.</p></div><p>Limpeza profissional para condomínios.</p></div></footer>
+<a class="float" href="https://wa.me/5534999160010" target="_blank">WA</a>
+
+<script>
+document.getElementById('quoteForm').addEventListener('submit',function(e){
+e.preventDefault();
+const texto=`Olá, Renova Clean! Gostaria de solicitar um orçamento.
+
+Nome: ${document.getElementById('nome').value}
+Condomínio: ${document.getElementById('condominio').value}
+Meu WhatsApp: ${document.getElementById('whatsapp').value}
+Cidade: ${document.getElementById('cidade').value || 'Não informado'}
+Serviço de interesse: ${document.getElementById('servico').value}
+Mensagem: ${document.getElementById('mensagem').value || 'Não informada'}`;
+window.open('https://wa.me/5534999160010?text='+encodeURIComponent(texto),'_blank');
+});
+</script>
+</body>
+</html>
